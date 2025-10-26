@@ -1,0 +1,25 @@
+.icon-height {
+  margin-top: -5px;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.cart-max-hight {
+  max-height: 200px;
+}
+.no-product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.no-product img {
+  width: 300px;
+  height: 300px;
+}
+.no-product-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

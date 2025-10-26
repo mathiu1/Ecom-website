@@ -1,0 +1,90 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+.icon-height {
+  margin-top: -5px;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.cart-max-hight {
+  max-height: 200px;
+}
+.no-product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.no-product img {
+  width: 300px;
+  height: 300px;
+}
+.no-product-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-box {
+  max-width: 250px !important;
+  max-height: 450px !important;
+}
+.card-img-top {
+  border-radius: 50px;
+  padding: 20px;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.card {
+  border-radius: 30px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+.card:hover .card-img-top {
+  transform: scale(1);
+}
+.card-body {
+  padding: 25px;
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.rating>input{
+  display: none;
+}
+
+.rating>label::before{
+  content: '\f005';
+  font-family: FontAwesome;
+  margin: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.rating>.half::before{
+  content: '\f089';
+  position: absolute;
+}
+
+.rating>label{
+  color:#ddd;
+  float: right;
+  transform: 0.2s;
+}
+
+
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+  color:gold !important;
+}
